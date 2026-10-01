@@ -10,7 +10,7 @@ app = Flask(__name__)
 # ============================================================
 # AYARLAR - BURAYI DEĞİŞTİR!
 # ============================================================
-ADMIN_PASSWORD = "UNREA-23DIO34-PREMIUM-634533VVVSJE23"  # ← Bunu değiştir!
+ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "DEFAULT_DEGISTIR")  # ← Bunu değiştir!
 DB_FILE = "licenses.db"
 # ============================================================
 
